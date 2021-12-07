@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Shippori+Antique+B1&display=swap');
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: #c3dfef;
+	font-family: sans-serif;
+  max-width: 750px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: #c3dfef;
+  background: linear-gradient(180deg, rgba(195,223,239,1) 0%, rgba(195,223,239,1) 90%, rgba(195,223,239,0.5) 95%, rgba(195,223,239,0.06) 100%);
+  /* background: linear-gradient(260deg, rgba(195,223,239,1) 0%, rgba(195,223,239,1) 90%, rgba(195,223,239,0.5) 95%, rgba(195,223,239,0.06) 100%);
+  background: linear-gradient(90deg, rgba(195,223,239,1) 0%, rgba(195,223,239,1) 90%, rgba(195,223,239,0.5) 95%, rgba(195,223,239,0.06) 100%); */
+  padding-top: 0px;
+  color: #03045e;
+  font-family: 'Shippori Antique B1', sans-serif;
+  padding-left: 50px;
+  padding-bottom: 15px;
+  position: sticky;
+  top: 0px;
+  cursor: auto;
+}
+
+.confetti {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.siriicon {
+  width: 50px;
+  border-radius: 5px;
+  margin: 10px 20px 0 40px;
+  padding-top: 20px;
+}
+
+.subheader {
+  color: #03045e;
+  margin-left: -164px;
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.icon-bar {
+  width: 120px;
+  background-color: #c3dfef;
+  margin-left: 200px;
+  margin-top: 40px;
+  border-radius: 10px;
+  float: right;
+}
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 50%; /*splits into two boxes*/
+  padding: 18px 0; /*top and bottom padding*/
+}
+.icon-bar a:hover {
+  background-color: #03045e;
+  box-shadow: inset 0px 0px 6px #c3dfef;
+  border-radius: 10px;
+}
+.icon-bar a:active {
+  opacity: 50%;
+  box-shadow: inset 0px 0px 6px #a0a0a0;
+  filter: drop-shadow(2px 2px 0.5rem #3a519b);
+}
+
+article {
+  background: white;
+  border: 3px solid #03045e;
+  width: 85%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 10px;
+  color: #03045e;
+  font-family: monospace;
+  box-shadow: inset 0px 0px 6px #a0a0a0;
+  max-width: 550px;
+  align-items:center;
+}
+
+.randomnumberbutton {
+  background-color: #3a519b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.randomnumberbutton:hover{
+  background-color: #e4007c;
+}
+.randomnumberbutton:active{
+  background-color: #d3ced1;
+  box-shadow: inset 0 0 5px #666;
+}
+
+.posttitle {
+  margin: 0px;
+}
+
+.postcontent {
+  line-height: 1.5;
+}
+
+.date {
+  color: #a0a0a0;
+  font-size: 8px;
+}
+.date:hover {
+  color: #03045e;
+}
+
+.caption {
+  color: #a0a0a0;
+  font-size: 8px;
+  margin-top: 0px;
+}
+.caption:hover {
+  color: #03045e;
+}
+
+ul {
+  line-height: 1.3;
+}
+
+.giphy {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+// Link formatting
+a:link {
+  color: #03045e;
+}
+a:visited {
+  color: #0077b6;
+}
+a:hover {
+  color: #e4007c;
+}
+a:active {
+  color: lightpink;
+}
+
+footer {
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 12px;
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+.footer:hover {
+  color: #03045e;
+}
