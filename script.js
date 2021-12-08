@@ -11,20 +11,17 @@ cx = ctx.canvas.width / 2;
 cy = ctx.canvas.height / 2;
 
 let confetti = [];
-const confettiCount = 300;
+const confettiCount = 1500;
 const gravity = 0.5;
-const terminalVelocity = 5;
+const terminalVelocity = 4;
 const drag = 0.075;
 const colors = [
-{ front: 'red', back: 'darkred' },
-{ front: 'green', back: 'darkgreen' },
-{ front: 'blue', back: 'darkblue' },
-{ front: 'yellow', back: 'darkyellow' },
-{ front: 'orange', back: 'darkorange' },
-{ front: 'pink', back: 'darkpink' },
-{ front: 'purple', back: 'darkpurple' },
-{ front: 'turquoise', back: 'darkturquoise' }];
-
+  { front : '#CDB4DB', back: '#CDB4DB'},
+  { front : '#FFC8DD', back: '#FFC8DD'},
+  { front : '#FFAFCC', back: '#FFAFCC'},
+  { front : '#FFDCE9', back: '#FFDCE9'},
+  { front : '#ff69b4', back: '#ff69b4'}
+  ];
 
 //-----------Functions--------------
 resizeCanvas = () => {
@@ -40,9 +37,11 @@ initConfetti = () => {
   for (let i = 0; i < confettiCount; i++) {
     confetti.push({
       color: colors[Math.floor(randomRange(0, colors.length))],
+      
+      //confetti size
       dimensions: {
-        x: randomRange(10, 20),
-        y: randomRange(10, 30) },
+        x: randomRange(12, 14),
+        y: randomRange(14, 16) },
 
       position: {
         x: randomRange(0, canvas.width),
@@ -56,7 +55,6 @@ initConfetti = () => {
       velocity: {
         x: randomRange(-25, 25),
         y: randomRange(0, -50) } });
-
 
   }
 };
