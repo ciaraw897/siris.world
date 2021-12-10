@@ -48,6 +48,31 @@ header {
   margin-left: -164px;
   font-family: 'Shippori Antique B1', sans-serif;
 }
+.aboutlink a {
+  color: #03045e;
+  font-family: 'Shippori Antique B1', sans-serif;
+  margin-left: 50px;
+  padding-top: 40px 0;
+  text-decoration: none;
+}
+.aboutlink a:hover {
+  color: white;
+  background-color: #03045e;
+  box-shadow: inset 0px 0px 6px #c3dfef;
+  border-radius: 10px;
+}
+.aboutlink a:active {
+  opacity: 50%;
+  box-shadow: inset 0px 0px 6px #a0a0a0;
+  filter: drop-shadow(2px 2px 0.5rem #3a519b);
+}
+.aboutlink a:visited {
+  color: white;
+  font-family: 'Shippori Antique B1', sans-serif;
+  margin-left: 50px;
+  padding-top: 40px 0;
+  text-decoration: none;
+}
 
 .icon-bar {
   width: 120px;
@@ -151,6 +176,7 @@ ul {
 // Link formatting
 a:link {
   color: #03045e;
+  text-decoration: none;
 }
 a:visited {
   color: #0077b6;
