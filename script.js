@@ -112,7 +112,9 @@ render = () => {
   });
 
   // Fire off another round of confetti
-  if (confetti.length <= 10) initConfetti();
+  //this is what makes it go again without doing anything else
+  //commenting out for now because it's annoying, so only one set goes on load
+ // if (confetti.length === 0) initConfetti();
 
   window.requestAnimationFrame(render);
 };

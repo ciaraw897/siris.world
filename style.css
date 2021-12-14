@@ -11,8 +11,12 @@ body {
 header {
   display: flex;
   align-items: center;
+  box-shadow: inset 9px 9px 0px #d8f8ff,
+            inset -9px -9px 0px #aec6d5;
+  /* background: linear-gradient(145deg, #d1efff, #b0c9d7); */
   background: #c3dfef;
-  background: linear-gradient(180deg, rgba(195,223,239,1) 0%, rgba(195,223,239,1) 90%, rgba(195,223,239,0.5) 95%, rgba(195,223,239,0.06) 100%);
+  border-radius: 19px;
+  /* background: linear-gradient(180deg, rgba(195,223,239,1) 0%, rgba(195,223,239,1) 90%, rgba(195,223,239,0.5) 95%, rgba(195,223,239,0.06) 100%); */
   /* for right and left */
   /* background: linear-gradient(260deg, rgba(195,223,239,1) 0%, rgba(195,223,239,1) 90%, rgba(195,223,239,0.5) 95%, rgba(195,223,239,0.06) 100%);
   background: linear-gradient(90deg, rgba(195,223,239,1) 0%, rgba(195,223,239,1) 90%, rgba(195,223,239,0.5) 95%, rgba(195,223,239,0.06) 100%); */
@@ -21,6 +25,7 @@ header {
   font-family: 'Shippori Antique B1', sans-serif;
   padding-left: 50px;
   padding-bottom: 15px;
+  margin-bottom: 50px;
   position: sticky;
   top: 0px;
   cursor: auto;
@@ -37,6 +42,7 @@ hr {
   position: absolute;
   left: 0px;
   top: 0px;
+  bottom: 0px;
   z-index: -1;
 }
 
@@ -54,15 +60,15 @@ hr {
   color: #03045e;
   margin-left: -164px;
   font-family: 'Shippori Antique B1', sans-serif;
+  margin-top: 105px;
 }
-.aboutlink a {
-  color: #03045e;
+
+.aboutlinkicon {
+  color: white;
   font-family: 'Shippori Antique B1', sans-serif;
-  margin-left: 50px;
-  padding-top: 40px 0;
   text-decoration: none;
 }
-.aboutlink a:hover {
+/* .aboutlink a:hover {
   color: white;
   background-color: #03045e;
   box-shadow: inset 0px 0px 6px #c3dfef;
@@ -79,26 +85,32 @@ hr {
   margin-left: 50px;
   padding-top: 40px 0;
   text-decoration: none;
-}
+} */
 
 .icon-bar {
-  width: 120px;
+  width: 180px;
   background-color: #c3dfef;
-  margin-left: 200px;
+  margin-left: 140px;
   margin-top: 40px;
   border-radius: 10px;
   float: right;
+  font-family: 'Shippori Antique B1', sans-serif;
+  text-decoration: none;
 }
 .icon-bar a {
   float: left; /* Float links side by side */
-  text-align: center; /* Center-align text */
-  width: 50%; /*splits into two boxes*/
+  text-align: center;
+  width: 33%; /*splits into 3 boxes*/
   padding: 18px 0; /*top and bottom padding*/
+  color: white;
+  font-family: 'Shippori Antique B1', sans-serif;
+  text-decoration: none;
 }
 .icon-bar a:hover {
   background-color: #03045e;
   box-shadow: inset 0px 0px 6px #c3dfef;
   border-radius: 10px;
+  color: white;
 }
 .icon-bar a:active {
   opacity: 50%;
@@ -107,21 +119,23 @@ hr {
 }
 
 article {
-  background: #c3dfef;
-  border: rgba(255, 255, 255, 0.5);
+  border-radius: 19px;
+  background: linear-gradient(145deg, #d1efff, #b0c9d7);
+  box-shadow:  9px 9px 0px #aec6d5,
+              -9px -9px 0px #d8f8ff;
+    border: rgba(255, 255, 255, 0.5);
   width: 85%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  border-radius: 10px;
   padding: 20px;
   padding-bottom: 10px;
   color: #03045e;
   font-family: monospace;
   max-width: 550px;
   align-items: center;
-  box-shadow: 9px 9px 22px #b7d2e1, -9px -9px 22px #cfecfd;
+
 }
 
 .randomnumberbutton {
