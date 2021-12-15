@@ -13,9 +13,31 @@ var dateTime = date+' '+time;
  
 document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
 
+//METAMASK
+var tipButton = document.querySelector('.tip-button')
+tipButton.addEventListener('click', function() {
+  if (typeof web3 === 'undefined') {
+    return renderMessage('You need to install MetaMask to use this feature. https://metamask.io')
+  }
+
+  var user_address = web3.eth.accounts[0]
+  web3.eth.sendTransaction({
+    to: YOUR_ADDRESS,
+    from: user_address,
+    value: web3.toWei('1', 'ether'),
+  }, function (err, transactionHash) {
+    if (err) return renderMessage('Oh no!: ' + err.message)
+
+    // If you get a transactionHash, you can assume it was sent,
+    // or if you want to guarantee it was received, you can poll
+    // for that transaction to be mined first.
+    renderMessage('Thanks for your support!')
+  })
+})
 
 //CONFETTI
 //-----------Var Inits--------------
+var siriicon = document.querySelector('.siriicon')
 const canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
@@ -113,7 +135,8 @@ render = () => {
 
   // Fire off another round of confetti
   //this is what makes it go again without doing anything else
-  //commenting out for now because it's annoying, so only one set goes on load
+  //commenting out for now because it's annoying
+  //now only one set goes on load
  // if (confetti.length === 0) initConfetti();
 
   window.requestAnimationFrame(render);
@@ -129,6 +152,6 @@ window.addEventListener('resize', function () {
 });
 
 //------------Click------------
-window.addEventListener('click', function () {
+siriicon.addEventListener('click', function () {
   initConfetti();
 });
