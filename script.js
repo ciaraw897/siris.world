@@ -14,26 +14,26 @@ var dateTime = date+' '+time;
 document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
 
 //METAMASK
-var tipButton = document.querySelector('.tip-button')
-tipButton.addEventListener('click', function() {
-  if (typeof web3 === 'undefined') {
-    return renderMessage('You need to install MetaMask to use this feature. https://metamask.io')
-  }
+// var tipButton = document.querySelector('.tip-button')
+// tipButton.addEventListener('click', function() {
+//   if (typeof web3 === 'undefined') {
+//     return renderMessage('You need to install MetaMask to use this feature. https://metamask.io')
+//   }
 
-  var user_address = web3.eth.accounts[0]
-  web3.eth.sendTransaction({
-    to: YOUR_ADDRESS,
-    from: user_address,
-    value: web3.toWei('1', 'ether'),
-  }, function (err, transactionHash) {
-    if (err) return renderMessage('Oh no!: ' + err.message)
+//   var user_address = web3.eth.accounts[0]
+//   web3.eth.sendTransaction({
+//     to: '0xF0f449f4E8D94D0e64de385D7c32a1F61B749DD3',
+//     from: user_address,
+//     value: web3.toWei('1', 'ether'),
+//   }, function (err, transactionHash) {
+//     if (err) return renderMessage('Oh no!: ' + err.message)
 
-    // If you get a transactionHash, you can assume it was sent,
-    // or if you want to guarantee it was received, you can poll
-    // for that transaction to be mined first.
-    renderMessage('Thanks for your support!')
-  })
-})
+//     // If you get a transactionHash, you can assume it was sent,
+//     // or if you want to guarantee it was received, you can poll
+//     // for that transaction to be mined first.
+//     renderMessage('Thanks for your support!')
+//   })
+// })
 
 //CONFETTI
 //-----------Var Inits--------------
@@ -144,7 +144,6 @@ render = () => {
 
 //---------Execution--------
 initConfetti();
-render();
 
 //----------Resize----------
 window.addEventListener('resize', function () {
@@ -153,5 +152,5 @@ window.addEventListener('resize', function () {
 
 //------------Click------------
 siriicon.addEventListener('click', function () {
-  initConfetti();
+  render();
 });
