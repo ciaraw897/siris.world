@@ -55,6 +55,10 @@ hr {
   margin-left: -164px;
   font-family: 'Shippori Antique B1', sans-serif;
   margin-top: 105px;
+
+}
+.subheader a {
+  text-decoration: none;
 }
 
 .aboutlinkicon {
@@ -129,6 +133,10 @@ article {
   font-family: monospace;
   max-width: 550px;
   align-items: center;
+}
+
+.Dec2021 {
+
 }
 
 .randomnumberbutton {
