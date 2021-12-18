@@ -55,9 +55,11 @@ hr {
   margin-left: -164px;
   font-family: 'Shippori Antique B1', sans-serif;
   margin-top: 105px;
-
 }
 .subheader a {
+  text-decoration: none;
+}
+h4 a {
   text-decoration: none;
 }
 
@@ -119,8 +121,11 @@ hr {
 
 article {
   border-radius: 19px;
+  //background: #c3dfef;
   background: linear-gradient(145deg, #d1efff, #b0c9d7);
-  box-shadow:  9px 9px 0px #aec6d5, -9px -9px 0px #d8f8ff;
+  box-shadow: 9px 9px 0px #aec6d5, -9px -9px 0px #d8f8ff;
+  // code generated with https://neumorphism.io/#e0e0e0
+  // radius: 19px, background: #c3dfef, distance: 9px, intensity: 0.11px, blur: 0, shape: flat
   border: rgba(255, 255, 255, 0.5);
   width: 85%;
   margin-top: 20px;
