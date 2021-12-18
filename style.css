@@ -12,7 +12,7 @@ header {
   display: flex;
   align-items: center;
   box-shadow: inset 9px 9px 0px #d8f8ff, inset -9px -9px 0px #aec6d5;
-  background: #c3dfef;
+  background: linear-gradient(145deg, #d1efff, #c6e2f2);
   border-radius: 19px;
   padding-top: 0px;
   color: #03045e;
@@ -56,11 +56,9 @@ hr {
   font-family: 'Shippori Antique B1', sans-serif;
   margin-top: 105px;
 }
-.subheader a {
-  text-decoration: none;
-}
 h4 a {
   text-decoration: none;
+  color: #03045e;
 }
 
 .aboutlinkicon {
@@ -74,7 +72,6 @@ h4 a {
 
 .icon-bar {
   width: 240px;
-  background-color: #c3dfef;
   margin-left: 140px;
   margin-top: 40px;
   border-radius: 10px;
@@ -83,10 +80,10 @@ h4 a {
   text-decoration: none;
 }
 .icon-bar a {
-  float: left; /* Float links side by side */
+  float: left;
   text-align: center;
-  width: 25%; /*splits into 4 boxes*/
-  padding: 18px 0; /*top and bottom padding*/
+  width: 25%;
+  padding: 18px 0;
   color: white;
   font-family: 'Shippori Antique B1', sans-serif;
   text-decoration: none;
@@ -110,22 +107,20 @@ h4 a {
   background-image: url('images/1_pay_mm_off.png');
   cursor: pointer;
 }
-
 .tip-button:hover {
   background-image: url('images/1_pay_mm_over.png');
 }
-
 .tip-button:active {
   background-image: url('images/1_pay_mm_off.png');
 }
 
 article {
   border-radius: 19px;
-  //background: #c3dfef;
-  background: linear-gradient(145deg, #d1efff, #b0c9d7);
+  /* background: #c3dfef; */
+  background: linear-gradient(145deg, #d1efff, #c6e2f2);
   box-shadow: 9px 9px 0px #aec6d5, -9px -9px 0px #d8f8ff;
-  // code generated with https://neumorphism.io/#e0e0e0
-  // radius: 19px, background: #c3dfef, distance: 9px, intensity: 0.11px, blur: 0, shape: flat
+  /* code generated with https://neumorphism.io/#e0e0e0 */
+  /* // radius: 19px, background: #c3dfef, distance: 9px, intensity: 0.11px, blur: 0, shape: flat */
   border: rgba(255, 255, 255, 0.5);
   width: 85%;
   margin-top: 20px;
@@ -138,10 +133,6 @@ article {
   font-family: monospace;
   max-width: 550px;
   align-items: center;
-}
-
-.Dec2021 {
-
 }
 
 .randomnumberbutton {
@@ -196,14 +187,14 @@ ul {
   padding-bottom: 0px;
 }
 
-//Links
+/* Links */
 a:link {
   color: #03045e;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 a:visited {
   color: #03045e;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 a:hover {
   color: #e4007c;

@@ -22,7 +22,7 @@ document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- 
 
 //   var user_address = web3.eth.accounts[0]
 //   web3.eth.sendTransaction({
-//     to: '0xF0f449f4E8D94D0e64de385D7c32a1F61B749DD3',
+//     to: YOUR_ADDRESS,
 //     from: user_address,
 //     value: web3.toWei('1', 'ether'),
 //   }, function (err, transactionHash) {
